@@ -1,0 +1,15 @@
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/DanishFootballLeagues.csproj.AssemblyReference.cache
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/DanishFootballLeagues.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/DanishFootballLeagues.AssemblyInfoInputs.cache
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/DanishFootballLeagues.AssemblyInfo.cs
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/DanishFootballLeagues.csproj.CoreCompileInputs.cache
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/bin/Debug/net7.0/DanishFootballLeagues
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/bin/Debug/net7.0/DanishFootballLeagues.deps.json
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/bin/Debug/net7.0/DanishFootballLeagues.runtimeconfig.json
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/bin/Debug/net7.0/DanishFootballLeagues.dll
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/bin/Debug/net7.0/DanishFootballLeagues.pdb
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/DanishFootballLeagues.dll
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/refint/DanishFootballLeagues.dll
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/DanishFootballLeagues.pdb
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/DanishFootballLeagues.genruntimeconfig.cache
+/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/Debug/net7.0/ref/DanishFootballLeagues.dll
