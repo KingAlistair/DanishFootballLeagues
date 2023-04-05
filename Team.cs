@@ -1,47 +1,18 @@
-class Team
+public class Team
 {
+        internal string Name { get; set; } 
+        internal string TeamAbbreviation { get; set; } 
 
-    private int id;
-    private string name;
-    private string teamAbbreviation;
+    private string SpecialRanking { get; set; } 
 
-    private char specialRanking;
-
-    public Team()
+    internal Team()
     {
     }
 
-    public static void ReadAllTeams()
+    public Team(string name, string teamAbbreviation, string specialRanking)
     {
-        string filePath = @"files/teams.csv";
-        StreamReader reader = null;
-
-        if (File.Exists(filePath))
-        {
-            reader = new StreamReader(File.OpenRead(filePath));
-            List<string> listA = new List<string>();
-
-            while (!reader.EndOfStream)
-            {
-                var line = reader.ReadLine();
-                var values = line.Split(',');
-
-                foreach (var item in values)
-                {
-                    listA.Add(item);
-                }
-            }
-
-            foreach (var column1 in listA)
-            {
-                Console.WriteLine(column1);
-            }
-        }
-        else
-        {
-            Console.WriteLine("File doesn't exist");
-        }
-
-        Console.ReadLine();
+        this.Name = name;
+        this.TeamAbbreviation = teamAbbreviation;
+        this.SpecialRanking = specialRanking;
     }
 }
