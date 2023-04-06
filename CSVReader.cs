@@ -51,10 +51,16 @@ public class CSVReader
                     var homeTeam = teams.FirstOrDefault(t => t.teamAbbreviation == homeTeamAbbr);
                     var awayTeam = teams.FirstOrDefault(t => t.teamAbbreviation == awayTeamAbbr);
 
-                    if (homeTeam == null || awayTeam == null)
+                    try
                     {
-                        // Handle the case where a team is not found in the teams list
-                        continue;
+                        if (homeTeam == null || awayTeam == null)
+                        {
+                            throw new Exception("One or both teams not found in the teams list.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
                     }
 
                     int homeTeamGoalsInt = int.Parse(homeTeamGoals);
