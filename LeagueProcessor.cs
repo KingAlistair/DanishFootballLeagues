@@ -4,8 +4,7 @@ public class LeagueProcessor
     public List<Team> teams;
     public List<Match> matches;
     public Dictionary<string, Standing> standings;
-
-    public LeagueProcessor() { }
+    
     public LeagueProcessor(League league, List<Team> teams)
     {
         this.league = league;
@@ -115,5 +114,4 @@ public class LeagueProcessor
             previousStanding = standing;
         }
     }
-
 }

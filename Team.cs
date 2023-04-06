@@ -5,10 +5,6 @@ public class Team
 
     private string specialRanking { get; set; }
 
-    internal Team()
-    {
-    }
-
     public Team(string name, string teamAbbreviation, string specialRanking)
     {
         this.name = name;

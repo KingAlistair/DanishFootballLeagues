@@ -17,30 +17,4 @@ public class League
         UpperLeaguePromotionSpots = upperLeaguePromotionSpots;
         RelegationSpots = relegationSpots;
     }
-
-    
-    public static League FromCsvFile(string filePath)
-{
-    using (var reader = new StreamReader(filePath))
-    {
-        reader.ReadLine();
-        string line = reader.ReadLine();
-        var values = line.Split(';');
-
-        string leagueName = values[0];
-        int promoteToChampionsLeague = int.Parse(values[1]);
-        int promoteToEuropeLeague = int.Parse(values[2]);
-        int promoteToConferenceLeague = int.Parse(values[3]);
-        int promoteToUpperLeague = int.Parse(values[4]);
-        int relegateToLowerLeague = int.Parse(values[5]);
-
-        return new League(
-            leagueName,
-            promoteToChampionsLeague,
-            promoteToEuropeLeague,
-            promoteToConferenceLeague,
-            promoteToUpperLeague,
-            relegateToLowerLeague);
-    }
-}
 }

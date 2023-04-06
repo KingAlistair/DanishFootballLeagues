@@ -1,15 +1,40 @@
 public class CSVReader
 {
 
+    public League ReadLeague(string filePath)
+    {
+        using (var reader = new StreamReader(filePath))
+        {
+            reader.ReadLine();
+            string line = reader.ReadLine();
+            var values = line.Split(';');
+
+            string leagueName = values[0];
+            int promoteToChampionsLeague = int.Parse(values[1]);
+            int promoteToEuropeLeague = int.Parse(values[2]);
+            int promoteToConferenceLeague = int.Parse(values[3]);
+            int promoteToUpperLeague = int.Parse(values[4]);
+            int relegateToLowerLeague = int.Parse(values[5]);
+
+            return new League(
+                leagueName,
+                promoteToChampionsLeague,
+                promoteToEuropeLeague,
+                promoteToConferenceLeague,
+                promoteToUpperLeague,
+                relegateToLowerLeague);
+        }
+    }
+
     public List<Team> ReadTeams(string filePath)
     {
         List<Team> teams = new List<Team>();
 
-        using (StreamReader sr = new StreamReader(filePath))
+        using (StreamReader reader = new StreamReader(filePath))
         {
-            sr.ReadLine();
+            reader.ReadLine();
             string line;
-            while ((line = sr.ReadLine()) != null)
+            while ((line = reader.ReadLine()) != null)
             {
                 string[] tokens = line.Split(';');
 
@@ -55,12 +80,12 @@ public class CSVReader
                     {
                         if (homeTeam == null || awayTeam == null)
                         {
-                            throw new Exception("One or both teams not found in the teams list.");
+                            throw new Exception($"Team {homeTeamAbbr} and/or {awayTeamAbbr} was not found in the teams list.");
                         }
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine($"Error: {ex.Message}");
+                        Console.WriteLine($"Missing team: {ex.Message}");
                     }
 
                     int homeTeamGoalsInt = int.Parse(homeTeamGoals);
