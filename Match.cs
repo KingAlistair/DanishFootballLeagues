@@ -1,8 +1,8 @@
 public class Match {
-    internal Team HomeTeam { get; set; } 
-    internal Team AwayTeam { get; set; } 
-    internal int HomeTeamGoals { get; set; } 
-    internal int AwayTeamGoals { get; set; } 
+    internal Team homeTeam { get; set; } 
+    internal Team awayTeam { get; set; } 
+    internal int homeTeamGoals { get; set; } 
+    internal int awayTeamGoals { get; set; } 
 
     public Match()
     {
@@ -10,9 +10,9 @@ public class Match {
 
     public Match(Team homeTeam, Team awayTeam, int homeTeamGoals, int awayTeamGoals)
     {
-        this.HomeTeam = homeTeam;
-        this.AwayTeam = awayTeam;
-        this.HomeTeamGoals = homeTeamGoals;
-        this.AwayTeamGoals = awayTeamGoals;
+        this.homeTeam = homeTeam;
+        this.awayTeam = awayTeam;
+        this.homeTeamGoals = homeTeamGoals;
+        this.awayTeamGoals = awayTeamGoals;
     }
 }

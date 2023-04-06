@@ -1,0 +1,24 @@
+TODO: 
+
+- Generate all rounds (up to 22) - Done
+- Make command line menu - Done
+- Sort standings - DOne
+- Refactor
+- Exceptions
+- Make colorful display 
+- Change standing view from only Abbreviation to Team name (Abbreviation)
+- Examples in ReadME File for 
+    - Type system
+    - Null handling
+    - String interpolation
+    - Pattern Matching
+    - Classes, structs and enums
+    - Properties
+    - Named & optional parameters
+    - Tupples, deconstruction
+    - Exception
+    - Attributes and DataValidation
+    - Arrays / Collections
+    - Ranges
+    - Generics
+- Testing

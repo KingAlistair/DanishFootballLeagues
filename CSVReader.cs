@@ -1,9 +1,10 @@
-public class CSVReader {
+public class CSVReader
+{
 
-      public List<Team> ReadTeams(string filePath)
+    public List<Team> ReadTeams(string filePath)
     {
         List<Team> teams = new List<Team>();
-        
+
         using (StreamReader sr = new StreamReader(filePath))
         {
             sr.ReadLine();
@@ -22,5 +23,51 @@ public class CSVReader {
         }
 
         return teams;
+    }
+
+    public List<Match> ReadMatches(string[] filePaths, List<Team> teams)
+    {
+        var matches = new List<Match>();
+
+        foreach (string filePath in filePaths)
+        {
+
+            using (var reader = new StreamReader(filePath))
+            {
+                reader.ReadLine();
+
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    var values = line.Split(';');
+
+                    // Assuming the CSV is structured as follows:
+                    // Home team abbreviation, Away team abbreviation, Score (x-y)
+                    var homeTeamAbbr = values[0].Trim();
+                    var awayTeamAbbr = values[1].Trim();
+                    var homeTeamGoals = values[2].Trim();
+                    var awayTeamGoals = values[3].Trim();
+
+                    var homeTeam = teams.FirstOrDefault(t => t.teamAbbreviation == homeTeamAbbr);
+                    var awayTeam = teams.FirstOrDefault(t => t.teamAbbreviation == awayTeamAbbr);
+
+                    if (homeTeam == null || awayTeam == null)
+                    {
+                        // Handle the case where a team is not found in the teams list
+                        continue;
+                    }
+
+                    int homeTeamGoalsInt = int.Parse(homeTeamGoals);
+                    int awayTeamGoalsInt = int.Parse(awayTeamGoals);
+
+                    var match = new Match(homeTeam, awayTeam, homeTeamGoalsInt, awayTeamGoalsInt);
+
+                    matches.Add(match);
+
+                }
+            }
+        }
+
+        return matches;
     }
 }

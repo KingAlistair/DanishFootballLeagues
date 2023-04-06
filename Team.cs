@@ -1,9 +1,9 @@
 public class Team
 {
-        internal string Name { get; set; } 
-        internal string TeamAbbreviation { get; set; } 
+    internal string name { get; set; }
+    internal string teamAbbreviation { get; set; }
 
-    private string SpecialRanking { get; set; } 
+    private string specialRanking { get; set; }
 
     internal Team()
     {
@@ -11,8 +11,8 @@ public class Team
 
     public Team(string name, string teamAbbreviation, string specialRanking)
     {
-        this.Name = name;
-        this.TeamAbbreviation = teamAbbreviation;
-        this.SpecialRanking = specialRanking;
+        this.name = name;
+        this.teamAbbreviation = teamAbbreviation;
+        this.specialRanking = specialRanking;
     }
 }
