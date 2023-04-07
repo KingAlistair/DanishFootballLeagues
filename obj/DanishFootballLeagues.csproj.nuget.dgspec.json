@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dani\\Projects\\DanishFootballLeagues\\DanishFootballLeagues.csproj": {}
+    "/Users/fernandabacelar/Desktop/DanishFootballLeagues/DanishFootballLeagues.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dani\\Projects\\DanishFootballLeagues\\DanishFootballLeagues.csproj": {
+    "/Users/fernandabacelar/Desktop/DanishFootballLeagues/DanishFootballLeagues.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dani\\Projects\\DanishFootballLeagues\\DanishFootballLeagues.csproj",
+        "projectUniqueName": "/Users/fernandabacelar/Desktop/DanishFootballLeagues/DanishFootballLeagues.csproj",
         "projectName": "DanishFootballLeagues",
-        "projectPath": "C:\\Users\\dani\\Projects\\DanishFootballLeagues\\DanishFootballLeagues.csproj",
-        "packagesPath": "C:\\Users\\dani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dani\\Projects\\DanishFootballLeagues\\obj\\",
+        "projectPath": "/Users/fernandabacelar/Desktop/DanishFootballLeagues/DanishFootballLeagues.csproj",
+        "packagesPath": "/Users/fernandabacelar/.nuget/packages/",
+        "outputPath": "/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dani\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/fernandabacelar/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -51,8 +51,6 @@
               "version": "[2.4.2, )"
             },
             "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.4.5, )"
             }
@@ -73,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }
