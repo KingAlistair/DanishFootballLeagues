@@ -76,17 +76,41 @@ public class CSVReader
                     var homeTeam = teams.FirstOrDefault(t => t.teamAbbreviation == homeTeamAbbr);
                     var awayTeam = teams.FirstOrDefault(t => t.teamAbbreviation == awayTeamAbbr);
 
+
+                    //Checks if team's Abbreviation from the round.csv file is not found in the teams.csv file
                     try
                     {
                         if (homeTeam == null || awayTeam == null)
                         {
-                            throw new Exception($"Team {homeTeamAbbr} and/or {awayTeamAbbr} was not found in the teams list.");
+                            throw new Exception($"Team {homeTeamAbbr} and/or {awayTeamAbbr} was not found in {filePath} file.");
                         }
                     }
-                    catch (Exception ex)
+                    catch (Exception missingTeam)
                     {
-                        Console.WriteLine($"Missing team: {ex.Message}");
+                        Console.WriteLine();
+                        Console.WriteLine($"Missing team error: {missingTeam.Message}");
+                        Console.WriteLine();
+                        throw;
                     }
+
+                    //Checks if team is playing against itself
+                    try
+                    {
+
+                        if (homeTeam == awayTeam)
+                        {
+                            throw new Exception($"Team {homeTeamAbbr} cannot play against itself! There is an error in file: {filePath}");
+                        }
+                    }
+
+                    catch (Exception sameTeam)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine($"Same team error: {sameTeam.Message}");
+                        Console.WriteLine();
+                        throw;
+                    }
+
 
                     int homeTeamGoalsInt = int.Parse(homeTeamGoals);
                     int awayTeamGoalsInt = int.Parse(awayTeamGoals);

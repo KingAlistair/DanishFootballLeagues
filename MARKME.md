@@ -1,4 +1,4 @@
- - Type system
+- Type system
      League.cs - Line 3, Line 4,
 
 - Null handling
@@ -23,7 +23,7 @@
 
 
 - Exception
-    CSVReader.cs - Line 54-64
+    CSVReader.cs - Line 81-94
 
 
 - Attributes and DataValidation
@@ -33,16 +33,6 @@
     Program.cs - Line 15
 
 - Ranges
-     int[] mySubset = myArray[1..4]; // [2, 3, 4]
+
 
 - Generics
-
-public class MyGenericClass<T>
-{
-    private T myProperty;
-    public MyGenericClass(T value)
-    {
-        myProperty = value;
-    }
-}
-MyGenericClass<string> myStringClass = new MyGenericClass<string>("Hello, world!");
