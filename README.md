@@ -1,5 +1,5 @@
 # DanishFootballLeagues
-C# mandatory I. by Fernanda Cunha Bacelar, Daniel Szabo.
+C# mandatory I. by Fernanda Cunha Bacelar and Daniel Szabo.
 
 
 User Manual:

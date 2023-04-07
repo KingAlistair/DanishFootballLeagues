@@ -1,12 +1,8 @@
 //using NUnit.Framework;
 public class ProgramTests
 {
-
-
     public void testSDisplay()
     {
-
-
         //Path
 
         //League
@@ -20,8 +16,6 @@ public class ProgramTests
         Console.WriteLine("=======================================================================================");
         Program.loadStanding(leagueFilePath, test_teams, test_roundsFiles);
         Console.WriteLine("=======================================================================================");
-
-
 
     }
 }
