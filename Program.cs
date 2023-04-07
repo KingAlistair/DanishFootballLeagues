@@ -20,17 +20,18 @@
         //Main menu
         bool exitProgram = false;
         while (!exitProgram)
-        {
-            //Console.BackgroundColor = ConsoleColor.Blue;
-            //Console.ForegroundColor = ConsoleColor.Black;
+        { 
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("Main Menu");
-            //Console.ResetColor();
-            //Console.BackgroundColor = ConsoleColor.White;
-            //Console.ForegroundColor = ConsoleColor.Black;
+            Console.ResetColor();
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("1. SuperLiagen standings");
             Console.WriteLine("2. NordicBetLigaen standings");
             Console.WriteLine("3. Exit program");
-            //Console.ResetColor();
+            Console.ResetColor();
 
             Console.Write("Please select an option: ");
             string input = Console.ReadLine();
