@@ -42,7 +42,7 @@
                     Console.WriteLine("=======================================================================================");
                     Console.WriteLine("SuperLiagen:");
                     Console.WriteLine("=======================================================================================");
-                    Program.loadStanding(leagueFilePath, SL_teamFilePath, SL_roundsFilePaths);
+                    Program.loadStanding(leagueFilePath: leagueFilePath, teamFilePath: SL_teamFilePath, roundsFilePath: SL_roundsFilePaths);
                     Console.WriteLine("=======================================================================================");
                     break;
 
@@ -51,7 +51,7 @@
                     Console.WriteLine("=======================================================================================");
                     Console.WriteLine("NordicBetLigaen:");
                     Console.WriteLine("=======================================================================================");
-                    Program.loadStanding(leagueFilePath, NBL_teamFilePath, NBL_roundsFilePaths);
+                    Program.loadStanding(leagueFilePath: leagueFilePath, teamFilePath: NBL_teamFilePath, roundsFilePath: NBL_roundsFilePaths);
                     Console.WriteLine("=======================================================================================");
                     break;
                 case "3":
