@@ -32,17 +32,21 @@ public class CSVReader
     {
         reader.ReadLine();
         string line = reader.ReadLine();
-        var (leagueName, promoteToChampionsLeague, promoteToEuropeLeague, promoteToConferenceLeague, promoteToUpperLeague, relegateToLowerLeague) = line.Split(';');
+        var values = line.Split(';');
+
+        var (leagueName, promoteToChampionsLeague, promoteToEuropeLeague, promoteToConferenceLeague, promoteToUpperLeague, relegateToLowerLeague) = 
+            (values[0], int.Parse(values[1]), int.Parse(values[2]), int.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]));
 
         return new League(
             leagueName,
-            int.Parse(promoteToChampionsLeague),
-            int.Parse(promoteToEuropeLeague),
-            int.Parse(promoteToConferenceLeague),
-            int.Parse(promoteToUpperLeague),
-            int.Parse(relegateToLowerLeague));
+            promoteToChampionsLeague,
+            promoteToEuropeLeague,
+            promoteToConferenceLeague,
+            promoteToUpperLeague,
+            relegateToLowerLeague);
     }
 }
+
     public List<Team> ReadTeams(string filePath)
     {
         List<Team> teams = new List<Team>();
