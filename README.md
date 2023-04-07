@@ -6,7 +6,8 @@ User Manual:
 
 Run applicataion from Command Line - dotnet run Progam.cs
 
-Main menu will be shown. Choose 1 or 2 to see the league's standing.
+Main menu will be shown. If blue color do no line up, resize command line manually.
+Choose 1 or 2 to see the league's standing.
 Press 3 to Exit program
 
 Main Menu

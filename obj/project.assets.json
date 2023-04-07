@@ -5528,19 +5528,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/fernandabacelar/.nuget/packages/": {}
+    "C:\\Users\\dani\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fernandabacelar/Desktop/DanishFootballLeagues/DanishFootballLeagues.csproj",
+      "projectUniqueName": "C:\\Users\\dani\\Projects\\DanishFootballLeagues\\DanishFootballLeagues.csproj",
       "projectName": "DanishFootballLeagues",
-      "projectPath": "/Users/fernandabacelar/Desktop/DanishFootballLeagues/DanishFootballLeagues.csproj",
-      "packagesPath": "/Users/fernandabacelar/.nuget/packages/",
-      "outputPath": "/Users/fernandabacelar/Desktop/DanishFootballLeagues/obj/",
+      "projectPath": "C:\\Users\\dani\\Projects\\DanishFootballLeagues\\DanishFootballLeagues.csproj",
+      "packagesPath": "C:\\Users\\dani\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dani\\Projects\\DanishFootballLeagues\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/fernandabacelar/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\dani\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -5597,7 +5597,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

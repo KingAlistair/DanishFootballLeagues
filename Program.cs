@@ -25,7 +25,7 @@
         //Main menu
         bool exitProgram = false;
         while (!exitProgram)
-        { 
+        {
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("Main Menu");
@@ -62,7 +62,10 @@
                     break;
 
                 case "3":
+                    Console.WriteLine("");
+                    Console.WriteLine("=======================================================================================");
                     Console.WriteLine("Choose a test:");
+                    Console.WriteLine("=======================================================================================");
                     Console.WriteLine("1. Missing team error");
                     Console.WriteLine("2. Same team error");
                     string errorInput = Console.ReadLine();
