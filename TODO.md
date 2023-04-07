@@ -1,13 +1,13 @@
 TODO: 
 
-- Examples in MARKME File
+- Examples in MARKME File - Done
 - Testing
 - Generate all rounds (up to 22) - Done
 - Make command line menu - Done
 - Sort standings - Done
 - Refactor - Done-ish
 - Exceptions - Done-ish
-- Make colorful display 
+- Make colorful display - Done
 - Change standing view from only Abbreviation to Team name (Abbreviation)
 
 

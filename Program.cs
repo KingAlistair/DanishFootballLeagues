@@ -21,7 +21,6 @@
         bool exitProgram = false;
         while (!exitProgram)
         { 
-            Console.Clear();
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("Main Menu");
