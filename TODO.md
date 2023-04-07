@@ -1,7 +1,7 @@
 TODO: 
 
-- Examples in MARKME File
-- Testing
+- Examples in MARKME File 
+- Testing 
 - Generate all rounds (up to 22) - Done
 - Make command line menu - Done
 - Sort standings - Done

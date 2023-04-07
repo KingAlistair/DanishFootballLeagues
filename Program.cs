@@ -17,6 +17,11 @@
         string[] NBL_roundsFilePaths = { "files/rounds/NBL/NBL_round1.csv", "files/rounds/NBL/NBL_round2.csv", "files/rounds/NBL/NBL_round3.csv", "files/rounds/NBL/NBL_round4.csv", "files/rounds/NBL/NBL_round5.csv", "files/rounds/NBL/NBL_round6.csv", "files/rounds/NBL/NBL_round7.csv", "files/rounds/NBL/NBL_round8.csv", "files/rounds/NBL/NBL_round9.csv", "files/rounds/NBL/NBL_round10.csv", "files/rounds/NBL/NBL_round11.csv",
         "files/rounds/NBL/NBL_round12.csv", "files/rounds/NBL/NBL_round13.csv", "files/rounds/NBL/NBL_round14.csv", "files/rounds/NBL/NBL_round15.csv", "files/rounds/NBL/NBL_round16.csv", "files/rounds/NBL/NBL_round17.csv", "files/rounds/NBL/NBL_round18.csv", "files/rounds/NBL/NBL_round19.csv", "files/rounds/NBL/NBL_round20.csv", "files/rounds/NBL/NBL_round21.csv", "files/rounds/NBL/NBL_round22.csv" };
 
+
+        //Test
+        string[] noTeamFoundError = { "files/test/noTeamFoundError.csv" };
+        string[] sameTeamError = { "files/test/sameTeamError.csv" };
+
         //Main menu
         bool exitProgram = false;
         while (!exitProgram)
@@ -29,7 +34,8 @@
             //Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("1. SuperLiagen standings");
             Console.WriteLine("2. NordicBetLigaen standings");
-            Console.WriteLine("3. Exit program");
+            Console.WriteLine("3. Testing");
+            Console.WriteLine("4. Exit program");
             //Console.ResetColor();
 
             Console.Write("Please select an option: ");
@@ -54,10 +60,35 @@
                     Program.loadStanding(leagueFilePath: leagueFilePath, teamFilePath: NBL_teamFilePath, roundsFilePath: NBL_roundsFilePaths);
                     Console.WriteLine("=======================================================================================");
                     break;
+
                 case "3":
+                    Console.WriteLine("Choose a test:");
+                    Console.WriteLine("1. Missing team error");
+                    Console.WriteLine("2. Same team error");
+                    string errorInput = Console.ReadLine();
+
+                    switch (errorInput)
+                    {
+                        case "1":
+                            Program.loadStanding(leagueFilePath, SL_teamFilePath, noTeamFoundError);
+                            break;
+
+                        case "2":
+                            Program.loadStanding(leagueFilePath, SL_teamFilePath, sameTeamError);
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid input, returning to Main menu.");
+                            break;
+                    }
+
+                    break;
+
+                case "4":
                     Console.WriteLine("Exiting program...");
                     exitProgram = true;
                     break;
+
                 default:
                     Console.WriteLine("Invalid input, please try again.");
                     break;
