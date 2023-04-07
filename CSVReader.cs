@@ -26,6 +26,27 @@ public class CSVReader
         }
     }
 
+    public League ReadLeagueDeconstructed(string filePath)
+{
+    using (var reader = new StreamReader(filePath))
+    {
+        reader.ReadLine();
+        string line = reader.ReadLine();
+        var values = line.Split(';');
+
+        var (leagueName, promoteToChampionsLeague, promoteToEuropeLeague, promoteToConferenceLeague, promoteToUpperLeague, relegateToLowerLeague) = 
+            (values[0], int.Parse(values[1]), int.Parse(values[2]), int.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]));
+
+        return new League(
+            leagueName,
+            promoteToChampionsLeague,
+            promoteToEuropeLeague,
+            promoteToConferenceLeague,
+            promoteToUpperLeague,
+            relegateToLowerLeague);
+    }
+}
+
     public List<Team> ReadTeams(string filePath)
     {
         List<Team> teams = new List<Team>();

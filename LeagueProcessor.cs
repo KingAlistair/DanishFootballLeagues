@@ -114,4 +114,50 @@ public class LeagueProcessor
             previousStanding = standing;
         }
     }
+
+    public void DisplayTopFiveStandings()
+{
+    var sortedStandings = standings.Values
+        .OrderByDescending(s => s.Points)
+        .ThenByDescending(s => s.GoalDifference)
+        .ThenByDescending(s => s.GoalsFor)
+        .ThenBy(s => s.GoalsAgainst)
+        .ThenBy(s => s.Team.name)
+        .ToList();
+
+    Console.WriteLine("Pos\tTeam\tM\tW\tD\tL\tGF\tGA\tGD\tP\tStreak");
+    int position = 1;
+    int currentPosition = 1;
+    Standing previousStanding = null;
+    foreach (var standing in sortedStandings.Take(5))
+    {
+        string positionString;
+        if (previousStanding == null || standing.Points != previousStanding.Points ||
+            standing.GoalDifference != previousStanding.GoalDifference ||
+            standing.GoalsFor != previousStanding.GoalsFor)
+        {
+            positionString = position.ToString();
+            currentPosition = position;
+        }
+        else
+        {
+            positionString = "-";
+        }
+
+        Console.WriteLine($"{positionString}\t" +
+                          $"{standing.Team.teamAbbreviation}\t" +
+                          $"{standing.GamesPlayed}\t" +
+                          $"{standing.Wins}\t" +
+                          $"{standing.Draws}\t" +
+                          $"{standing.Losses}\t" +
+                          $"{standing.GoalsFor}\t" +
+                          $"{standing.GoalsAgainst}\t" +
+                          $"{standing.GoalDifference}\t" +
+                          $"{standing.Points}\t" +
+                          $"{standing.Streak}");
+
+        position++;
+        previousStanding = standing;
+    }
+}
 }

@@ -20,7 +20,7 @@
     Program.cs - Line 45,54
 
 - Tupples, deconstruction
-
+    CSVReader.cs - Line 29
 
 - Exception
     CSVReader.cs - Line 81-94
@@ -33,6 +33,7 @@
     Program.cs - Line 15
 
 - Ranges
-
+LeagueProcessor.cs - Line 118 
 
 - Generics
+FileReader.cs 
