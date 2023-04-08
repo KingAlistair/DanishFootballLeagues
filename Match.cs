@@ -4,10 +4,6 @@ public class Match {
     internal int homeTeamGoals { get; set; } 
     internal int awayTeamGoals { get; set; } 
 
-    public Match()
-    {
-    }
-
     public Match(Team homeTeam, Team awayTeam, int homeTeamGoals, int awayTeamGoals)
     {
         this.homeTeam = homeTeam;

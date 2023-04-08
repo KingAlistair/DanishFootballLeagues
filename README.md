@@ -6,13 +6,15 @@ User Manual:
 
 Run applicataion from Command Line - dotnet run Progam.cs
 
-Main menu will be shown. If blue color do no line up, resize command line manually.
+Main menu will be shown. If blue color do not line up, resize command line manually.
 Choose 1 or 2 to see the league's standing.
-Press 3 to Exit program
+Press 3 to test exceptions regarding errors in the csv files.
+Press 4 to Exit program
 
 Main Menu
 1. SuperLiagen standings
 2. NordicBetLigaen standings
+3. Testing
 3. Exit program
 
 

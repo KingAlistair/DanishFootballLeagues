@@ -14,26 +14,26 @@
     Standing.cs - Line 1,3,
 
 - Properties
-    Standing.cs - Line 3
+    Standing.cs - Line 3,
 
 - Named & optional parameters
-    Program.cs - Line 45,54
+    Program.cs - Line 51,60,
 
 - Tupples, deconstruction
-    CSVReader.cs - Line 29
+    CSVReader.cs - Line 37,
 
 - Exception
-    CSVReader.cs - Line 81-94
+    CSVReader.cs - Line 102,
 
 
 - Attributes and DataValidation
-    Program.cs - Line 38
+    Program.cs - Line 44,
 
 - Arrays / Collections
-    Program.cs - Line 15
+    Program.cs - Line 12,
 
 - Ranges
-LeagueProcessor.cs - Line 118 
+LeagueProcessor.cs - Line 118,
 
 - Generics
-FileReader.cs 
+FileReader.cs  Line 1,
